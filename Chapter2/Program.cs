@@ -1,6 +1,20 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+// Namespacing
+// int x = 12 * 30;
+// System.Console.WriteLine(x);
 
-app.MapGet("/", () => "Hello World!");
+// Use using to remove refering to namespaces
+// using System; // But using System is not necessary anymore
 
-app.Run();
+// int x = 12 * 30;
+// Console.WriteLine(x);
+
+Console.WriteLine(FeetToInches(30));
+Console.WriteLine(FeetToInches(100));
+
+
+int FeetToInches(int feet)
+{
+  int inches = feet * 12;
+  return inches;
+}
+
